@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="robots" content="noindex" /> -->
+    <title>塔本経営相談事務所 改</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Split Type -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header" id="top">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="/img/logo-2.png" alt="塔本経営相談事務所" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li><a href="#top">トップ</a></li>
+            <li><a href="#about">私について</a></li>
+            <li><a href="#service">サービス</a></li>
+            <li><a href="#experience">実務経験</a></li>
+          </ul>
+          <a href="" class="header__btn">お問い合わせ</a>
+        </nav>
+
+        <button class="drawer__icon">
+          <div class="drawer__icon--bar"></div>
+          <div class="drawer__icon--bar"></div>
+          <div class="drawer__icon--bar"></div>
+        </button>
+
+        <div class="drawer">
+          <div class="drawer__inner">
+            <ul class="drawer__list">
+              <li><a href="#top">トップ</a></li>
+              <li><a href="#about">私について</a></li>
+              <li><a href="#service">サービス</a></li>
+              <li><a href="#experience">実務経験</a></li>
+            </ul>
+            <a href="#contact" class="drawer__btn">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="fv">
+      <div class="fv__img"></div>
+      <div class="fv__color"></div>
+      <h2 class="fv__text animation__text">
+        <span>経営の悩み、労務の不安。</span><br />
+        <span>塔本経営相談事務所に</span><br />
+        <span>ご相談ください</span>
+      </h2>
+    </div>
+
+    <section class="about" id="about">
+      <div class="about__inner inner">
+        <div class="heading-block">
+          <h3 class="about__title title">About</h3>
+          <div class="about__heading heading">事務所について</div>
+          <p class="about__text text">
+            <span
+              >“誰に相談したら良いのかも分からないし、何をどう話したらいいのかもわからない…”
+              そんな不安や戸惑いを抱えて、一人で悩んでいませんか？<br
+            /></span>
+            <span
+              >経営をしていると、日々の業務やスタッフの管理、労務に関する問題など、大小様々な課題が次々と生まれます。<br />
+              そうした場合、どこにどのように相談すれば良いか悩んでしまうことも多いかと思います。
+              そのような“話しにくい悩み”や“漠然とした不安”も、どうぞご遠慮なくお聞かせください。<br />
+              お客様一人ひとりの立場や状況を丁寧に理解しながら、共に最適な解決策を見つけるお手伝いをいたします。<br
+            /></span>
+            <!-- <span
+              >まずは一度ご相談ください。初回のご相談には費用は発生いたしませんので、どんな些細な疑問でもお気軽にお話しいただければと思います。<br />
+              共に解決策を見つけ、安心と信頼を感じていただける時間をご提供いたします。</span
+            > -->
+          </p>
+          <div class="about__heading heading">私について</div>
+          <div class="about__intro text">
+            <!-- <div class="about__intro-img">
+              <img
+                src="./img/man.jpg"
+                alt="塔本　啓　写真"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+            </div> -->
+            <div class="about__intro-profiles">
+              <h2 class="about__intro-office">塔本経営相談事務所</h2>
+              <h3 class="about__intro-role">代表 / 社会保険労務士</ｈ>
+              <h3 class="about__intro-name">塔本　啓</h3>
+              <div class="about__intro-furi">(とうもと　けい)</div>
+              <div class="about__intro-lists">
+                <dl class="about__intro-list">
+                  <dt>
+                    <time datetime="2011-04">2011年4月</time>
+                  </dt>
+                  <dd>
+                    <p>京都信用金庫に入社</p>
+                  </dd>
+                </dl>
+                <dl class="about__intro-list">
+                  <dt>
+                    <time datetime="2014-03">～2015年3月</time>
+                  </dt>
+                  <dd>
+                    <p>個人金融担当</p>
+                  </dd>
+                </dl>
+                <dl class="about__intro-list">
+                  <dt>
+                    <time datetime="2023-04">〜2023年4月</time>
+                  </dt>
+                  <dd>
+                    <p>企業金融担当</p>
+                  </dd>
+                </dl>
+                <dl class="about__intro-list">
+                  <dt>
+                    <time datetime="2023-04">2023年4月</time>
+                  </dt>
+                  <dd>
+                    <p>塔本経営相談事務所を開業</p>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="about__heading heading">事業目的</div>
+          <h3 class="about__purpose-title">
+            個人事業主様や小規模事業者様の強い味方
+          </h3>
+          <p class="about__purpose-text text">
+            京都信用金庫では、やりがいのある仕事に日々取り組むことができました。
+            しかし、3～5年ごとの転勤が常態化しており、お客様の長期的なパートナーとして寄り添うことが難しい現実がありました。
+            「いつでも何でも相談できる、信頼できるパートナー」になりたいという思いから、独立を決意しました。
+            中小企業様は、人材不足や労務管理の複雑化といった課題を抱えていらっしゃいます。
+            当事務所では、社会保険・労働保険の手続き代行、給与計算、就業規則作成、労務相談など、幅広い労務管理サービスを提供することで、お客様の労務に関するご負担を軽減し、企業の発展に貢献いたします。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="service__inner inner">
+        <div class="heading-block">
+          <h3 class="service__title title">Service</h3>
+          <div class="service__heading heading">サービスについて</div>
+        </div>
+        <div class="service__items">
+          <div class="service__item animated__slideIn--left">
+            <div class="service__item-img">
+              <img
+                src="./img/PC-image-1.jpg"
+                alt=""
+                width="500"
+                height=""
+                loading="lazy"
+              />
+            </div>
+            <div class="service__item-title">社会保険労務士業務</div>
+            <div class="service__item-text text">
+              雇用に関する相談、働き方改善、助成金の活用など、概略ご相談に対応させていただきます。また、労働保険・社会保険の手続き代行や助成金申請、暫定的な進め方、職場環境の改善のアドバイスなど、企業様の多様なニーズにお応えします。
+              近年、慢性的な人手不足が本格化しておりますが、人材の確保や継続雇用がますます重要な課題となっております。状況に応じた具体的なアドバイスをご提供させていただきます。
+            </div>
+          </div>
+          <div class="service__item animated__slideIn--right">
+            <div class="service__item-img">
+              <img
+                src="./img/PC-image-6.jpg"
+                alt=""
+                width="500"
+                height=""
+                loading="lazy"
+              />
+            </div>
+            <div class="service__item-title">各種補助金の申請</div>
+            <div class="service__item-text text">
+              近年ではコロナ禍に伴って追加された「事業再構築補助金」が注目されていますが、「ものづくり補助金」や「小規模事業者持続化補助金」など、多くの補助金が利用可能です。
+              御社の成長や事業拡大の際には、これらの補助金を活用すると今後の発展が期待できます。
+            </div>
+          </div>
+          <div class="service__item animated__slideIn--left">
+            <div class="service__item-img">
+              <img
+                src="./img/PC-image-2.jpg"
+                alt=""
+                width="500"
+                height=""
+                loading="lazy"
+              />
+            </div>
+            <div class="service__item-title">経営コンサルタント業務</div>
+            <div class="service__item-text text">
+              御社の状況を詳しく分析し、資金調達やキャッシュフロー改善に向けたアドバイスを提供させていただきます。
+              表明面・業務面でのサポートだけでなく、「働き方改革」や「人材確保」に関する労務面のご支援も含めて、サポートを含めてできることが私の強みです。
+              多角的な視点でのご支援により、御社の成長と安定を強力にサポートさせていただきます。
+              まずは現状の課題や目指す目標をお聞かせください。
+            </div>
+          </div>
+          <div class="service__item animated__slideIn--right">
+            <div class="service__item-img">
+              <img
+                src="./img/kyuuyo.jpg"
+                alt=""
+                width="500"
+                height=""
+                loading="lazy"
+              />
+            </div>
+            <div class="service__item-title">給与計算</div>
+            <div class="service__item-text text">
+              給与計算は、企業運営に不可欠な業務の一つですが、法改正への対応や、複雑な計算が求められるため、正確で効率的な管理が必要です。法令遵守と正確な計算を徹底し、御社の給与計算業務を安心してお任せいただけるサポートを提供いたします。
+              また、給与計算業務の負担を軽減するだけでなく、残業時間や福利厚生などの詳細な分析によるコスト削減のご提案も可能です。経費や時間を削減し、本業に集中できる環境づくりをご支援いたします。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience__inner inner">
+        <div class="heading-block">
+          <h3 class="service__title title">Experience</h3>
+          <div class="service__heading heading">実務経験について</div>
+        </div>
+        <div class="experience__contents">
+          <div class="experience__content experience-content">
+            <div class="experience-content__image">
+              <img src="./img/PC-image-4.jpg" alt="" />
+            </div>
+            <div class="experience-content__body">
+              <h3 class="experience-content__head">京都信用金庫</h3>
+              <span>2011年～2015年</span>
+              <p class="experience-content__text">
+                京都信用金庫に勤務し、法人営業として企業の融資相談から個人のお客さまのローン相談まで、幅広い業務を担当してきました。<br />経営者の資金繰りや事業計画の相談に携わる中で、経営課題を多角的に捉える力を培うことができました。この経験を活かし、社会保険労務士としてもお客さまの立場に寄り添い、経営と人事・労務の両面から安心できるご支援を行ってまいります。
+              </p>
+            </div>
+          </div>
+          <div class="experience__content experience-content">
+            <div class="experience-content__image">
+              <img src="./img/PC-image-2.jpg" alt="" />
+            </div>
+            <div class="experience-content__body">
+              <h3 class="experience-content__head">社会保険労務士</h3>
+              <span>2023年～</span>
+              <p class="experience-content__text">
+                社会の変化や働き方の多様化に伴い、企業が抱える労務の悩みも様々になっています。私たち社会保険労務士は、難しい制度や法改正への対応だけでなく、経営者や従業員の皆さまが安心できる職場づくりを丁寧にお手伝いします。人に寄り添い、共に歩む身近な存在として、経営の良きパートナーであり続けたいと考えています。
+              </p>
+            </div>
+          </div>
+          <div class="experience__content experience-content">
+            <div class="experience-content__image">
+              <img src="./img/PC-image-5.jpg" alt="" />
+            </div>
+            <div class="experience-content__body">
+              <h3 class="experience-content__head">現在の主な業務</h3>
+              <span>2023年～</span>
+              <p class="experience-content__text">
+                社会保険労務士として、中小企業を中心に、労務管理や社会保険手続き、給与計算など日常的な実務支援を行っています。加えて、助成金や補助金の活用を通じた資金面のサポートや、経営課題に応じた幅広い支援にも取り組んでいます。身近な相談役として、安心できる労務環境づくりと企業の健全な成長を支えることを大切にしています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__inner inner">
+        <div class="heading-block">
+          <h3 class="service__title title">Contact</h3>
+          <div class="service__heading heading">お問い合わせ</div>
+        </div>
+        <div class="contact__text">
+          <!-- 経営相談や助成金、給与計算に関すること以外でもお気軽にご相談ください。お見積もり依頼も可能です。 -->
+        </div>
+        <div class="contact__adress">
+          <h4>〒600-8813 京都市下京区中堂南町134番地ASTEMビル8階</h4>
+          <p>電話 : <a href="tel:000-0000-0000">090-5057-8289</a></p>
+          <p>
+            メール : <a href="mailto:example@example.com">1354shyuu@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <!-- <div class="contact__form-inner">
+        <form action="" class="contact__form">
+          <div class="contact__row">
+            <p class="contact__head"><span class="is-required">名前</span></p>
+            <div class="contact__data">
+              <input type="text" placeholder="山田　太郎" />
+            </div>
+          </div>
+          <div class="contact__row">
+            <p class="contact__head"><span class="is-required">メールアドレス</span></p>
+            <div class="contact__data">
+              <input type="email" placeholder="info@example.com" />
+            </div>
+          </div>
+          <div class="contact__row">
+            <p class="contact__head"><span>お問い合わせ内容</span></p>
+            <div class="contact__data">
+              <textarea name="message"></textarea>
+            </div>
+          </div>
+          <div class="contact__acceptance contact__data-checkbox">
+            <label for="acceptance">
+              <input
+                type="checkbox"
+                id="acceptance"
+                name=""
+                value="acceptance"
+              />
+              <span><a href="">プライバシーポリシー</a>に同意する</span>
+            </label>
+          </div>
+          <div class="contact__submit">
+            <input type="submit" value="送信する" />
+          </div>
+        </form>
+      </div> -->
+
+      <div class="iframe__wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.471216733407!2d135.73759492467988!3d34.99490761737195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001063b9e6e7a7b%3A0x117b0bd34a665e3b!2zQVNURU0g44Kk44OO44OZ44O844K344On44Oz5Ym15Ye644Kz44Of44Ol44OL44OG44Kj44O877yIU1RDM--8iQ!5e0!3m2!1sja!2sjp!4v1724625390140!5m2!1sja!2sjp"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+<footer>
+  <div class="footer__inner inner">
+    <div class="footer__wrapper">
+      <small class="footer__copyright">
+        &copy; 塔本経営相談事務所
+      </small>
+    </div>
+  </div>
+</footer>
+
+    <!-- <div class="start">
+      <h1 class="start-text">塔本経営相談事務所</h1>
+    </div> -->
+
+    <script src="./js/lib/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
